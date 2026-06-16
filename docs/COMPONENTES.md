@@ -23,3 +23,5 @@
 
 ## Utilidades
 - **useScrollAnimation:** Hook para animaciones al hacer scroll
+- **assetUrl:** Resuelve rutas de assets con el base path de GitHub Pages (`utils/assets.js`)
+- **formatPrice:** Formatea precios en pesos colombianos (`utils/constants.js`)
