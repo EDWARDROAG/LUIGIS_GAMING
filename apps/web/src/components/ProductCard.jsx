@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ShoppingCart, Star } from 'lucide-react'
 import { toast } from 'sonner'
+import { formatPrice } from '../utils/constants'
 
 export default function ProductCard({ id, title, price, image, platform, rating, category }) {
   const addToCart = (e) => {
@@ -28,7 +29,7 @@ export default function ProductCard({ id, title, price, image, platform, rating,
         <div className="p-4">
           <div className="mb-2 flex items-start justify-between gap-2">
             <h3 className="line-clamp-1 font-black">{title}</h3>
-            <span className="shrink-0 font-black text-red-500">${price}</span>
+            <span className="shrink-0 font-black text-red-500">{formatPrice(price)}</span>
           </div>
           <div className="mb-3 flex items-center gap-2">
             <div className="flex items-center gap-1">

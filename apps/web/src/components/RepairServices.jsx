@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import SectionTitle from './SectionTitle'
 
 const services = [
-  { icon: Wrench, title: 'Reparación de Consolas', description: 'Diagnóstico y reparación de PlayStation, Xbox, Nintendo y más.', price: 'Desde 49€' },
-  { icon: Gamepad, title: 'Reparación de Controles', description: 'Joystick drift, botones atascados, conexión y más.', price: 'Desde 29€' },
-  { icon: Cpu, title: 'Mantenimiento Preventivo', description: 'Limpieza profunda, cambio de pasta térmica y optimización.', price: 'Desde 39€' },
-  { icon: Clock, title: 'Servicio Express', description: 'Reparaciones urgentes en 24-48 horas.', price: 'Desde 59€' },
+  { icon: Wrench, title: 'Reparación de Consolas', description: 'Diagnóstico y reparación de PlayStation, Xbox, Nintendo y más.', price: 'Desde $220.000' },
+  { icon: Gamepad, title: 'Reparación de Controles', description: 'Joystick drift, botones atascados, conexión y más.', price: 'Desde $130.000' },
+  { icon: Cpu, title: 'Mantenimiento Preventivo', description: 'Limpieza profunda, cambio de pasta térmica y optimización.', price: 'Desde $175.000' },
+  { icon: Clock, title: 'Servicio Express', description: 'Reparaciones urgentes en 24-48 horas.', price: 'Desde $265.000' },
   { icon: Shield, title: 'Garantía', description: 'Todos nuestros trabajos tienen 3 meses de garantía.', price: 'Incluido' },
   { icon: Award, title: 'Certificados', description: 'Técnicos certificados y piezas originales.', price: 'Calidad' },
 ]

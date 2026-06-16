@@ -3,10 +3,10 @@ import ProductCard from './ProductCard'
 import SectionTitle from './SectionTitle'
 
 const accessories = [
-  { id: 7, title: 'DualSense Wireless Controller', price: 69.99, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'PlayStation 5', rating: 4.8 },
-  { id: 8, title: 'Xbox Wireless Controller', price: 59.99, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'Xbox Series X', rating: 4.7 },
-  { id: 9, title: 'Nintendo Switch Pro Controller', price: 69.99, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'Nintendo Switch', rating: 4.6 },
-  { id: 10, title: 'Auriculares Gaming', price: 89.99, image: 'https://images.unsplash.com/photo-1599669454699-248893623440?w=400', platform: 'Universal', rating: 4.5 },
+  { id: 7, title: 'DualSense Wireless Controller', price: 279900, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'PlayStation 5', rating: 4.8 },
+  { id: 8, title: 'Xbox Wireless Controller', price: 239900, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'Xbox Series X', rating: 4.7 },
+  { id: 9, title: 'Nintendo Switch Pro Controller', price: 279900, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'Nintendo Switch', rating: 4.6 },
+  { id: 10, title: 'Auriculares Gaming', price: 359900, image: 'https://images.unsplash.com/photo-1599669454699-248893623440?w=400', platform: 'Universal', rating: 4.5 },
 ]
 
 export default function AccessoryGrid() {

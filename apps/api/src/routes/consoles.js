@@ -2,9 +2,9 @@ import express from 'express'
 const router = express.Router()
 
 const consoles = [
-{ id: 4, title: 'PlayStation 5', price: 499.99, platform: 'Sony', rating: 4.9, stock: 5 },
-{ id: 5, title: 'Xbox Series X', price: 499.99, platform: 'Microsoft', rating: 4.8, stock: 3 },
-{ id: 6, title: 'Nintendo Switch OLED', price: 349.99, platform: 'Nintendo', rating: 4.7, stock: 7 }
+{ id: 4, title: 'PlayStation 5', price: 2299900, platform: 'Sony', rating: 4.9, stock: 5 },
+{ id: 5, title: 'Xbox Series X', price: 2199900, platform: 'Microsoft', rating: 4.8, stock: 3 },
+{ id: 6, title: 'Nintendo Switch OLED', price: 1499900, platform: 'Nintendo', rating: 4.7, stock: 7 }
 ]
 
 router.get('/', (req, res) => {

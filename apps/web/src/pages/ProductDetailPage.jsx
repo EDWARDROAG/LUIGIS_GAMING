@@ -4,12 +4,12 @@ import { ArrowLeft, ShoppingCart, Star, CheckCircle } from 'lucide-react'
 import { toast } from 'sonner'
 import PageShell from '../components/PageShell'
 import PillButton from '../components/PillButton'
-import { getWhatsAppUrl } from '../utils/constants'
+import { getWhatsAppUrl, formatPrice } from '../utils/constants'
 
 const products = {
-  1: { id: 1, title: 'Mario Kart 8 Deluxe', price: 59.99, image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', platform: 'Nintendo Switch', rating: 4.9, category: 'juego', description: 'El juego de carreras definitivo para Nintendo Switch.', stock: 10 },
-  4: { id: 4, title: 'PlayStation 5', price: 499.99, image: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400', platform: 'Sony', rating: 4.9, category: 'consola', description: 'La última generación de PlayStation con gráficos 4K.', stock: 5 },
-  7: { id: 7, title: 'DualSense Wireless Controller', price: 69.99, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'PlayStation 5', rating: 4.8, category: 'accesorio', description: 'Controlador inalámbrico DualSense con tecnología háptica.', stock: 15 },
+  1: { id: 1, title: 'Mario Kart 8 Deluxe', price: 249900, image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', platform: 'Nintendo Switch', rating: 4.9, category: 'juego', description: 'El juego de carreras definitivo para Nintendo Switch.', stock: 10 },
+  4: { id: 4, title: 'PlayStation 5', price: 2299900, image: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400', platform: 'Sony', rating: 4.9, category: 'consola', description: 'La última generación de PlayStation con gráficos 4K.', stock: 5 },
+  7: { id: 7, title: 'DualSense Wireless Controller', price: 279900, image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400', platform: 'PlayStation 5', rating: 4.8, category: 'accesorio', description: 'Controlador inalámbrico DualSense con tecnología háptica.', stock: 15 },
 }
 
 export default function ProductDetailPage() {
@@ -67,7 +67,7 @@ export default function ProductDetailPage() {
               <span className="font-semibold text-gray-500">({product.rating})</span>
             </div>
           </div>
-          <div className="text-3xl font-black text-red-500">${product.price}</div>
+          <div className="text-3xl font-black text-red-500">{formatPrice(product.price)}</div>
           <p className="text-gray-700">{product.description}</p>
           <div className="flex items-center gap-2 text-sm font-semibold text-gray-600">
             <CheckCircle className="h-4 w-4 text-green-500" />
