@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { assetUrl } from '../utils/assets.js'
 
 function randomPosition() {
   return {
@@ -23,7 +24,7 @@ export default function FloatingCoins() {
       {coins.map((coin, index) => (
         <img
           key={index}
-          src="/assets/img/coin.gif"
+          src={assetUrl('/assets/img/coin.gif')}
           alt=""
           className="coin-drift absolute h-9 w-9 opacity-60 sm:h-11 sm:w-11"
           style={{

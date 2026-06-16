@@ -1,5 +1,6 @@
 import PillButton from './PillButton'
 import WaveDivider from './WaveDivider'
+import { assetUrl } from '../utils/assets.js'
 
 export default function PromoSection() {
   return (
@@ -24,7 +25,7 @@ export default function PromoSection() {
 
         <div className="right w-full md:w-1/2 lg:w-1/3">
           <img
-            src="/assets/img/activity_img3.png"
+            src={assetUrl('/assets/img/activity_img3.png')}
             alt="Actividades y servicios gaming"
             className="mx-auto w-full max-w-md md:max-w-full"
           />

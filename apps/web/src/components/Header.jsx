@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import { assetUrl } from '../utils/assets.js'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,7 +23,7 @@ export default function Header() {
     <nav className="flex items-center justify-between bg-gray-800 lg:justify-start">
       <div className="logo w-1/6 flex-initial p-2">
         <Link to="/">
-          <img src="/assets/img/logo.png" width="100" alt="Gaming Store" className="h-auto" />
+          <img src={assetUrl('/assets/img/logo.png')} width="100" alt="Gaming Store" className="h-auto" />
         </Link>
       </div>
 
