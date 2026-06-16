@@ -1,0 +1,16 @@
+{
+"name": "gaming-store-monorepo",
+"private": true,
+"version": "1.0.0",
+"workspaces": ["apps/*"],
+"scripts": {
+"dev": "npm run dev --workspaces --parallel",
+"dev:web": "npm run dev --workspace=gaming-store-web",
+"dev:api": "npm run dev --workspace=gaming-store-api",
+"build": "npm run build --workspaces",
+"build:web": "npm run build --workspace=gaming-store-web",
+"build:pages": "npm run build:web",
+"start:api": "npm run start --workspace=gaming-store-api",
+"preview": "npm run preview --workspace=gaming-store-web"
+}
+}

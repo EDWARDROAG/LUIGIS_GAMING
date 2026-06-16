@@ -1,0 +1,123 @@
+:root {
+--color-gaming-primary: #7C3AED;
+--color-gaming-secondary: #1E1B4B;
+--color-gaming-accent: #F59E0B;
+--color-gaming-dark: #0F0A1A;
+--color-gaming-card: #1A1430;
+--color-gaming-text: #E2E8F0;
+--color-gaming-text-light: #94A3B8;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', system-ui, -apple-system, sans-serif;
+background-color: var(--color-gaming-dark);
+color: var(--color-gaming-text);
+}
+
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--color-gaming-dark);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--color-gaming-primary);
+border-radius: 4px;
+}
+
+@layer utilities {
+.text-glow {
+text-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+}
+.bg-gaming-gradient {
+background: linear-gradient(135deg, #1E1B4B 0%, #0F0A1A 100%);
+}
+.bg-card-gradient {
+background: linear-gradient(145deg, #1A1430, #2A1F45);
+}
+
+/* Patrones inspirados en referencias_cliente/main.css */
+.bg-wave-white {
+  background-image: url('/assets/img/wave-white.png');
+}
+.bg-wave-pink {
+  background-image: url('/assets/img/wave-pink.png');
+}
+.bg-wave-dots {
+  background-image: url('/assets/img/pattern-white-dots.png');
+}
+.bg-pattern-gaming {
+  background-image: url('/assets/img/pattern-characters-red.png');
+  background-color: #7f1d1d;
+}
+.bg-character-gaming {
+  background-image: url('/assets/img/wp2983043-super-mario-and-luigi-wallpaper.jpg');
+}
+.bg-yellow-dots {
+  background-image: url('/assets/img/pattern-yellow-dots.png');
+  background-color: #facc15;
+}
+
+.link {
+  display: block;
+  padding: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+.link:hover {
+  color: var(--color-gaming-accent);
+}
+
+.coin-drift {
+  transition: top 4.5s ease-in-out, left 4.5s ease-in-out;
+  animation: coin-bob 2.5s ease-in-out infinite;
+}
+
+@keyframes coin-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.whatsapp-btn {
+  animation: whatsapp-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes whatsapp-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 28px rgba(37, 211, 102, 0.7);
+  }
+}
+
+.input-gaming {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 4px solid #e5e7eb;
+  background-color: #f9fafb;
+  padding: 0.75rem;
+  color: #111827;
+  transition: border-color 0.2s;
+}
+.input-gaming:focus {
+  border-color: var(--color-gaming-accent);
+  outline: none;
+}
+}
